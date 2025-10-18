@@ -231,3 +231,27 @@
   ::-webkit-scrollbar-track {
     background: var(--bg-alt);
   }
+
+
+@media (max-width: 600px) {
+    .hero {
+      padding: 2rem 1.2rem; /* less horizontal padding */
+    }
+  
+    .hero h1 {
+      font-size: 2rem; /* smaller heading on mobile */
+    }
+  
+    .tagline {
+      font-size: 1rem;
+    }
+  
+    .summary {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+    }
+  }
+  
