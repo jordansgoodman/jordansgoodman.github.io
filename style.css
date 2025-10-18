@@ -235,7 +235,7 @@
 
 @media (max-width: 600px) {
     .hero {
-      padding: 2rem 1.rem; /* less horizontal padding */
+      padding: 2rem 1rem; /* less horizontal padding */
     }
   
     .hero h1 {
