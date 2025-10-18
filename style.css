@@ -1,0 +1,223 @@
+:root {
+    --accent: #0a84ff;
+    --accent-light: #4aa3ff;
+    --text: #1a1a1a;
+    --muted: #555;
+    --bg: #ffffff;
+    --bg-alt: #f7f9fb;
+    --line: #e3e3e3;
+    --dot: var(--accent);
+    --max-width: 900px;
+    --transition: 0.3s ease;
+  }
+  
+  /* Dark mode automatically */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --bg-alt: #1a1d22;
+      --text: #e8e8e8;
+      --muted: #999;
+      --line: #2b2b2b;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background var(--transition), color var(--transition);
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 2.5rem;
+  }
+  
+  /* Container */
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(120deg, var(--accent), var(--accent-light));
+    color: white;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.02em;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+  
+  .contact a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .summary {
+    margin-top: 1.2rem;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--accent);
+  }
+  
+  /* Project Cards */
+  .projects {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .project {
+    background: var(--bg-alt);
+    padding: 1.8rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .project h3 a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .project h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .project .meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+  }
+  
+  .project p {
+    font-size: 0.95rem;
+  }
+  
+  /* Timeline */
+  .timeline {
+    margin-top: 4rem;
+  }
+  
+  .timeline-container {
+    position: relative;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--line);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2.2rem;
+    opacity: 0.95;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.2rem;
+    top: 0.4rem;
+    width: 12px;
+    height: 12px;
+    background: var(--dot);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+    transition: transform var(--transition);
+  }
+  
+  .timeline-item:hover::before {
+    transform: scale(1.2);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+  
+  .timeline-content p {
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  
+  /* Writing and About */
+  .writing, .about {
+    margin-top: 3.5rem;
+    background: var(--bg-alt);
+    padding: 1.8rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  }
+  
+  .writing p, .about p {
+    font-size: 1rem;
+  }
+  
+  .writing a {
+    color: var(--accent);
+    font-weight: 500;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  
+  /* Scrollbar polish */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-alt);
+  }
+  
