@@ -235,7 +235,7 @@
 
 @media (max-width: 600px) {
     .hero {
-      padding: 2rem 1.2rem; /* less horizontal padding */
+      padding: 2rem 1.rem; /* less horizontal padding */
     }
   
     .hero h1 {
@@ -247,11 +247,11 @@
     }
   
     .summary {
-      font-size: 0.95rem;
+      font-size: 0.80rem;
       line-height: 1.6;
       word-break: break-word;
       overflow-wrap: break-word;
-      max-width: 100%;
+      max-width: 95%;
     }
   }
   
