@@ -176,14 +176,25 @@
   .timeline-content h3 {
     font-size: 1.1rem;
     color: var(--accent);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
   }
-  
+
+  /* New job title styling */
+  .job-title {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+    display: block;
+    letter-spacing: 0.01em;
+  }
+
   .timeline-content p {
     font-size: 0.95rem;
     color: var(--text);
   }
-  
+
   /* Writing and About */
   .writing, .about {
     margin-top: 3.5rem;
@@ -220,4 +231,3 @@
   ::-webkit-scrollbar-track {
     background: var(--bg-alt);
   }
-  
